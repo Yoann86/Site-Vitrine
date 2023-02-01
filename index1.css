@@ -1,0 +1,427 @@
+@font-face {
+	font-family: 'Ancient';
+	src: url(./police/Geizer.otf);
+	
+}
+
+:root{
+    --couleur-noir: #1a1a1a;
+    --couleur-jaune: #fdd000;
+    --couleur-gris: #232323;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:visited{
+    text-decoration: none;
+}
+
+body, .container {
+
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial;
+    position: relative;
+    margin: 0%;
+    background-color: var(--couleur-gris);
+    color: #fff;
+
+}
+
+.black {
+    background-color: var(--couleur-noir);
+}
+
+
+
+/*Headder*/
+
+#barre_jaune {
+    background-color: var(--couleur-jaune);
+    color: var(--couleur-jaune); 
+    height: 0.5vh;
+}
+
+section.page_haut h1 a {
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+}
+
+.page_haut {
+    margin-bottom: 2vh;
+}
+
+#logo {
+    position: relative;
+    width: 10vw;
+    left: 10vw;   
+    top: 2vh; 
+
+}
+
+section.page_haut h1 {
+    position: relative;
+    display: inline;
+    left: 10vw;
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.searchbar {
+    position: relative;
+    display: inline-block;
+    left:27vw;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 1.1vw;   
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    color: #fff;
+    text-align: center;
+    margin-right: 1.5vw;
+    text-decoration: none;
+    
+}
+
+.sign {
+    background-color: #fdd000;
+    color: var(--couleur-noir);
+    padding: 0.5vw;
+    border-radius: 4px;
+}
+
+a:hover {
+    color: rgb(214, 214, 214);
+    transition: 0.2s;
+}
+
+.sign:hover {
+    color: var(--couleur-noir);
+    filter: brightness(0.5);
+}
+
+
+/*Bannière*/
+
+div.presentation h2,h3,.pp {
+    width: 50%;
+    margin-left: 1vw;
+}
+
+div.presentation h2,h3 {
+    position: relative;
+    display: block;
+    top: 10vh;
+    font-size: 2.4vw;
+    
+}
+
+
+.pp {
+    position: relative;
+    width: 30vw;
+    top: 10vh;
+    font-size: 1.2vw;
+    filter: brightness(0.9);
+}
+
+.minecraft_offre{
+    position: absolute;
+    background-color: var(--couleur-noir);
+    right: 4vw;
+    top:35%;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    border: 2px solid black;
+    margin-bottom: none;
+    
+}
+
+.p_minecraft_offre {
+    position: relative;
+    top:10%;
+    font-size: 1.2vw;
+    margin-bottom: 2.3vw;
+    
+}
+
+.presentation {
+    background-image: url(./Images/imageonline-co-brightnessadjusted.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+
+div.minecraft_offre a{
+    text-decoration: none;
+    position: relative;
+    background-color: #fdd000;
+    color: var(--couleur-noir);
+    padding: 0.5vw;
+    border-radius: 4px;
+    top:3vh ;
+    font-size: 1.05vw;
+}
+
+div.minecraft_offre a:hover{
+    color: var(--couleur-noir);
+    filter: brightness(0.5);
+    
+}
+
+/*Offre - grille*/
+
+div.resume_offre h2,div.resume_offre h4,div.resume_offre p{
+    text-align: center;
+}
+
+div.resume_offre h2{
+    font-size: 2vw;
+    
+}
+
+div.resume_offre h4{
+    filter: brightness(0.8);
+}
+
+div.resume_offre h1{
+    font-size: 1.5vw;
+}
+
+.grille img {
+    width: 7vw;
+    height: 6.5vw;
+}
+
+.grille {
+    text-align: center;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 5vh ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 3vw;
+    grid-row-gap: 3vh;
+}
+
+/*Footer*/
+
+.footer {
+    margin-top: 7vh;
+    position: relative;
+    height: 20vh;
+    align-items: center;
+    text-align: center;
+    background-color: var(--couleur-noir);
+    
+}
+
+hr {
+    margin-bottom: 5vh;
+}
+
+/* Jeux */
+
+div.presentation_jeux h2,h3,.pp {
+    width: 50%;
+    margin-left: 1vw;
+}
+
+div.presentation_jeux h2,h3 {
+    position: relative;
+    display: block;
+    top: 10vh;
+    font-size: 2.4vw;
+    
+}
+.presentation_jeux {
+    background-image: url(./Images/minecraft\ ajusté.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    margin-bottom: 5vh;
+}
+
+.grille_jeux {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 5vh ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 3vw;
+    grid-row-gap: 3vh;
+    
+}
+
+.grille_jeux div {
+    width: 23vw;   
+    display: block;
+    
+}
+
+.grille_jeux a {
+    color: #fff;
+    text-align: center;
+    margin-right: 1.5vw;
+    text-decoration: none;
+
+}
+    
+.grille_jeux div:hover{
+    filter: brightness(0.5);
+    transition: 0.4s;
+}
+
+.grille_jeux img {
+    display: block;
+    width: 23vw;  
+    height: 23vh;
+    margin:0px;
+    padding: 0px;
+    border: 3px solid black;
+}
+
+.grille_jeux div p{
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 23vw;
+    height: 4vh;
+    margin:0px;
+    font-size: 1vw;
+    
+}
+
+
+/*Minecraft*/
+
+.minecraft_serveur  {
+    margin-top: 5vh;
+    height: 30vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 4vw;
+    text-align: left;
+}
+
+.minecraft_serveur a {
+    display: flex;
+    background-color: #0724c5;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    height: 3vh;
+    color: rgb(227, 225, 232);
+    text-align: center;
+    margin-right: 1.5vw;
+    text-decoration: none;
+}
+.minecraft_serveur a:hover {
+    filter: brightness(0.6);
+}
+
+.minecraft_serveur p,.minecraft_serveur h1,.minecraft_serveur a {
+    margin-left: 1vw;
+}
+
+.minecraft_serveur h1 {
+    font-size: 1.5vw;
+}
+
+.minecraft_serveur div {
+    display: block;
+    height: 26vh;
+    background-color: rgb(213, 210, 210);
+    color: var(--couleur-noir);
+    
+}
+
+div.presentation_minecraft h2,h3,.pp {
+    width: 50%;
+    margin-left: 1vw;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+
+}
+
+div.presentation_minecraft h2,h3 {
+    position: relative;
+    display: block;
+    top: 10vh;
+    font-size: 2.4vw;
+    
+}
+.presentation_minecraft {
+    background-image: url(./Images/mine\ serv.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    margin-bottom: 5vh;
+}
+
+/*Informations */
+
+.presentation_informations {
+    background-image: url(./Images/serv.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 43vh;
+    margin-bottom: 5vh;
+    border: 2px solid black;
+}
+
+div.presentation_informations h2 {
+    
+    position: relative;
+    display: flex;
+    font-size: 4vw;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    justify-content: center;
+    top:10vh;
+}
+
+.blabla {
+    display: block;
+    margin-left: 5vw;
+    text-align: justify;
+    width: 80%;
+}
+
+.blabla h4 {
+    text-decoration: none;
+    margin:0;
+    font-size: 2.5vw;
+    font-weight: bolder;
+
+}
+
+.blabla h2 {
+    font-size: 2vw;
+    color: var(--couleur-jaune);
+}
+
+.blabla p {
+    font-size: 1vw;
+}
+
+
+
+
+
+
